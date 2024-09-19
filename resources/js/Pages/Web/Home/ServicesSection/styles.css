@@ -1,0 +1,43 @@
+.btn-1 {
+    transition: ease-out 0.3s;
+    box-shadow: inset 0 0 0 #F9E506;
+
+}
+.btn-1:hover {
+    box-shadow: inset 300px 0 0 0 #0051A8;
+}
+
+.waterfall-text {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .waterfall-text span {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: waterfallAnimation 2s linear infinite;
+  }
+  
+  @keyframes waterfallAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    25% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    75% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  }
+  
